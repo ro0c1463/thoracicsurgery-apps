@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f7f8">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141c1e">
+<title>呼吸器外科専門医試験 対策</title>
+<style>
+:root{
+  --bg:#f4f7f8; --card-bg:#ffffff; --text:#1c2b30; --sub:#5a6b70;
+  --accent:#0f6b7a; --accent2:#2f8f9d; --border:#d7e0e2; --shadow:rgba(15,60,70,.12);
+  --chip-bg:#e4f0f2; --chip-text:#0f6b7a; --soon:#8a99a0;
+}
+:root[data-theme="dark"]{
+  --bg:#141c1e; --card-bg:#1d2a2d; --text:#e6eef0; --sub:#a3b4b8;
+  --accent:#4fb3c2; --accent2:#3f9aa8; --border:#2e4145; --shadow:rgba(0,0,0,.4);
+  --chip-bg:#20393d; --chip-text:#7fd4e0; --soon:#7a8a90;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141c1e; --card-bg:#1d2a2d; --text:#e6eef0; --sub:#a3b4b8;
+    --accent:#4fb3c2; --accent2:#3f9aa8; --border:#2e4145; --shadow:rgba(0,0,0,.4);
+    --chip-bg:#20393d; --chip-text:#7fd4e0; --soon:#7a8a90;
+  }
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--bg); color:var(--text); line-height:1.7;
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+}
+.wrap{margin:0 auto; max-width:760px; padding:28px 18px 48px;}
+header{display:flex; align-items:flex-start; gap:12px; margin-bottom:6px;}
+h1{font-size:1.35rem; margin:0; flex:1;}
+#themeToggle{
+  background:none; border:1px solid var(--border); border-radius:8px;
+  color:var(--text); cursor:pointer; font-size:1rem; padding:4px 10px;
+}
+.lead{color:var(--sub); font-size:.9rem; margin:0 0 22px;}
+.countdown{
+  background:var(--card-bg); border:1px solid var(--border); border-radius:12px;
+  box-shadow:0 1px 3px var(--shadow); margin-bottom:24px; padding:18px 20px;
+}
+.countdown .days{color:var(--accent); font-size:2.4rem; font-weight:700; line-height:1.2;}
+.countdown .days span{font-size:1rem; font-weight:600; margin-left:4px;}
+.countdown .detail{color:var(--sub); font-size:.85rem;}
+h2{border-bottom:1px solid var(--border); font-size:.95rem; margin:28px 0 12px; padding-bottom:6px;}
+.grid{display:grid; gap:12px; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));}
+.card{
+  background:var(--card-bg); border:1px solid var(--border); border-radius:12px;
+  box-shadow:0 1px 3px var(--shadow); color:inherit; display:block;
+  padding:16px 18px; text-decoration:none; transition:border-color .15s, transform .15s;
+}
+a.card:hover{border-color:var(--accent2); transform:translateY(-2px);}
+.card h3{font-size:1rem; margin:0 0 6px;}
+.card p{color:var(--sub); font-size:.83rem; margin:0;}
+.card.soon{opacity:.62;}
+.card.soon h3{color:var(--soon);}
+.badge{
+  background:var(--chip-bg); border-radius:99px; color:var(--chip-text);
+  font-size:.7rem; margin-left:6px; padding:2px 9px; vertical-align:middle;
+}
+footer{color:var(--sub); font-size:.78rem; margin-top:36px; text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>呼吸器外科専門医試験 対策</h1>
+  <button id="themeToggle" title="テーマ切替">🌓</button>
+</header>
+<p class="lead">『呼吸器外科テキスト改訂第3版』準拠。復元過去問（H18〜2022年度）に基づく学習用教材です。</p>
+
+<div class="countdown">
+  <div class="days" id="days">—</div>
+  <div class="detail">
+    2026年11月6日（金）13:00–16:00　東京国際フォーラム ホールB7<br>
+    マークシート・原則2枝選択・120問・14領域
+  </div>
+</div>
+
+<h2>学習アプリ</h2>
+<div class="grid">
+  <a class="card" href="quiz.html">
+    <h3>過去問演習</h3>
+    <p>復元過去問から起こした演習問題。演習・復習・模試（120問／180分）の3モード。領域別・年度別に絞り込めます。</p>
+  </a>
+  <div class="card soon">
+    <h3>教科書まとめ<span class="badge">準備中</span></h3>
+    <p>第3版の章別要約。14領域の出題範囲に対応させて整理します。</p>
+  </div>
+  <a class="card" href="flashcards.html">
+    <h3>フラッシュカード</h3>
+    <p>過去問の論点から作る一問一答。分類・数値・人名術式の暗記用。間隔反復で復習期日を管理します。</p>
+  </a>
+  <div class="card soon">
+    <h3>対策スケジュール<span class="badge">準備中</span></h3>
+    <p>試験日から逆算した学習計画と、領域別の進捗管理。</p>
+  </div>
+</div>
+
+<footer>
+  非公式の学習用教材です。復元過去問には公式解答がなく、解答・解説は独自の判断を含みます。<br>
+  最新の試験日程・形式は <a href="https://chest.umin.jp/spl/spl_test.html" style="color:var(--accent);">日本呼吸器外科学会</a> で確認してください。
+</footer>
+
+</div>
+<script>
+const THEME_KEY = "ths_theme";  // 演習アプリと共有する（改名禁止）
+function applyTheme(t){
+  if(t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+  else document.documentElement.removeAttribute("data-theme");
+}
+applyTheme(localStorage.getItem(THEME_KEY));
+document.getElementById("themeToggle").addEventListener("click", () => {
+  const cur = document.documentElement.getAttribute("data-theme");
+  const isDark = cur ? cur === "dark"
+    : window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const next = isDark ? "light" : "dark";
+  applyTheme(next);
+  localStorage.setItem(THEME_KEY, next);
+});
+
+const EXAM_DATE = new Date(2026, 10, 6, 13, 0);  // 2026-11-06 13:00
+function renderCountdown(){
+  const el = document.getElementById("days");
+  const ms = EXAM_DATE - new Date();
+  if(ms <= 0){ el.innerHTML = `試験日<span>を迎えました</span>`; return; }
+  const days = Math.ceil(ms / 86400000);
+  el.innerHTML = `残り ${days}<span>日</span>`;
+}
+renderCountdown();
+setInterval(renderCountdown, 60000);
+</script>
+</body>
+</html>
